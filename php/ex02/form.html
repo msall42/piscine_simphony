@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire de contact</title>
+</head>
+<body>
+    <h1>Formulaire de contact</h1>
+
+    <form>
+        <label for="firstname">Firstname :</label>
+        <input type="text" id="firstname">
+
+        <label for="name">Name :</label>
+        <input type="text" id="name">
+
+        <label for="age">Age :</label>
+        <input type="number" id="age">
+
+        <label for="phone">Phone :</label>
+        <input type="tel" id="phone">
+
+        <label for="email">Email :</label>
+        <input type="email" id="email">
+
+        <label>
+            <input type="checkbox" id="student">
+            Student at 42 ?
+        </label>
+
+        <p>Gender :</p>
+
+        <label>
+            <input type="radio" id="gender_male" name="gender" value="Male">
+            Male
+        </label>
+
+        <label>
+            <input type="radio" id="gender_female" name="gender" value="Female">
+            Female
+        </label>
+
+        <label>
+            <input type="radio" id="gender_other" name="gender" value="Other">
+            Other
+        </label>
+
+        <button type="submit" onclick="displayFormContents();">
+            Send
+        </button>
+    </form>
+
+    <script src="popup.js"></script>
+</body>
+</html>
